@@ -1,0 +1,32 @@
+<div class="container">
+	<div>
+		<button class="btn btn-primary" (click)="navigate()">ADDTASK</button>
+	</div>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>S.No</th>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Date</th>
+				<th>Status</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngIf="tasks.length === 0">Table Is Empty</tr>
+			<tr *ngFor="let task of tasks; let i = index">
+				<td>{{ i+1}}</td>
+				<td>{{ task.name}}</td>
+				<td>{{ task.description}}</td>
+				<td>{{ task.date}}</td>
+				<td>{{ task.status}}</td>
+				<td>
+					<button class="btn btn-primary" (click)="editTask(task.id)">Edit</button> |
+					<button class="btn btn-danger" (click)="deleteTask(task.id)">Delete</button>
+
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,30 @@
+<h1>
+    {{title}}
+</h1>
+
+<div>
+    <button class="btn btn-danger" (click)="navigate()">BACK</button>
+</div>
+<form #taskForm="ngForm" (ngSubmit)="addTasks(taskForm.value)">
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input class="form-control" type="text" name="name" [(ngModel)]="data.name" placeholder="Enter Task Name">
+
+    </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <input class="form-control" type="text" name="description" [(ngModel)]="data.description" placeholder="Enter Description">
+
+    </div>
+    <div class="form-group">
+        <label for="date">Date</label>
+        <input class="form-control" type="date" name="date" [(ngModel)]="data.date" placeholder="Enter Date">
+
+    </div>
+    <div class="form-group">
+        <label for="status">Status</label>
+        <input class="form-control" type="text" name="status" [(ngModel)]="data.status" placeholder="Enter status">
+
+    </div>
+    <button class="btn btn-primary btn-block" type="submit">{{buttonText}}</button>
+</form>

@@ -1,0 +1,20 @@
+.table tr:hover
+{
+    background-color: #ccc;
+}
+.table tr{
+    cursor: pointer;
+}
+.table{
+    text-align: center;
+}
+.table tr th{
+    text-align: center;
+}
+.btn-save{
+    float:right;
+    margin:15px 0;
+}
+.serach-product{
+    float: right;
+}
