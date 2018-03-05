@@ -2,13 +2,30 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This project sets up Angular 4 with Express.js, Node.js and MySQL, Sequalizejs. It performs basic connection with the database and builds simple API using the technology stack. The frontend contains setup of routing with Angular 4. 
 
-## Code scaffolding
+Best of Luck!
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
+
+ download or clone this repository and go to the project folder and follow the steps below:
+
+`npm install`
+
+`cd server`
+
+`npm install`
+
+Once completed, run in the server folder:
+
+`node server.js` or  nodemon server.js
+
+Then create a new terminal or command line tab and go to the project folder and run `ng serve` for a dev server. 
+
+In your browswer, navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
 
 ## Build
 
@@ -20,8 +37,5 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
+Before running the tests make sure you are serving the app via `ng serve`.
